@@ -1,0 +1,33 @@
+﻿@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FormulaGeneral</title>
+</head>
+<body>
+    <h2>
+        Ingresar los valores de las variables a, b y c de la fórmula de segundo grado con el formato siguiente:
+    </h2>
+    <h3>
+        ax˄2 + bx + c = 0
+    </h3>
+    <form asp-action="Index" method="post">
+        <p>
+            <label for="VariableA">Variable a:</label>
+            <input id="VariableA" required="" type="number" name="VariableA" />
+        </p>
+        <p>
+            <label for="VariableB">Variable b:</label>
+            <input id="VariableB" required="" type="number" name="VariableB" />
+        </p>
+        <p>
+            <label for="VariableC">Variable c:</label>
+            <input id="VariableC" required="" type="number" name="VariableC" />
+        </p>
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
